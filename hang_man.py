@@ -22,3 +22,31 @@ print(">>>You can guess only one letter at a time. Dont forget to press 'Enter k
 time.sleep(2)
 print(">>>Have fun......")
 time.sleep(0.5)
+
+#choosing the secret word
+
+while True:
+    if category.upper() == 'S':
+        secretWord = random.choice(Superheroes)
+        break
+    elif category.upper() =='F':
+        secretWord = random.choice(Fruits)
+        break
+    else:
+        category = input("please select a valid category: F for Fruits / S for Super-Heroes; X to exit")
+        if category.upper() == 'X':
+            print("bye. see u next time!!")
+            playGame = False
+            break
+if playGame:
+    secretWordList = list(secretWord)
+    attempts = (len(secretWord) + 2)
+
+    userGuessList = []
+    
+
+
+
+
+
+
